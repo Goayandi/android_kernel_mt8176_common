@@ -1,0 +1,15 @@
+#
+# Joystick driver configuration
+#
+menuconfig INPUT_SOC
+	bool "SOC adc driver"
+
+if INPUT_SOC
+
+config SOC_ADC 
+	tristate "soc adc driver support "
+
+config ADC_JS
+	tristate "adc js driver support "
+
+endif
