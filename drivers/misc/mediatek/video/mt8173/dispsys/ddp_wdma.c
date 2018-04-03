@@ -513,8 +513,9 @@ static int wdma_config_l(DISP_MODULE_ENUM module, disp_ddp_path_config *pConfig,
 		if (primary_display_is_decouple_mode() == 1
 #ifdef CONFIG_MTK_HDMI_SUPPORT
 		    || ext_disp_is_decouple_mode() == 1
-#endif
+#else
 			|| ovl2mem_is_alive() == 1
+#endif
 		    ) {
 			unsigned int idx = wdma_index(module);
 			unsigned int idx_offst = idx * DISP_WDMA_INDEX_OFFSET;

@@ -14,8 +14,8 @@
 #ifndef _EXTD_DDP_H_
 #define _EXTD_DDP_H_
 
-#include "ddp_hal.h"
-#include "ddp_manager.h"
+#include "../../../video/mt8173/dispsys/ddp_hal.h"
+#include "../../../video/mt8173/dispsys/ddp_manager.h"
 
 typedef enum {
 	EXTD_DIRECT_LINK_MODE,
